@@ -7,3 +7,4 @@ From today I will be taking Striver's 30-Day DSA challenge. I promise to be cons
 <h4>Day-3: --ARRAYS PART- III</h4>
 <h4>Day-4: --ARRAYS PART- IV</h4>
 <h4>Day-5: --LINKEDLIST PART- I</h4>
+<h4>Day-6: --LINKEDLIST PART- II</h4>
