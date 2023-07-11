@@ -10,3 +10,7 @@ From today I will be taking Striver's 30-Day DSA challenge. I promise to be cons
 <h4>Day-6: --LINKEDLIST PART- II</h4>
 <h4>Day-7: --LINKEDLIST AND ARRAYS</h4>
 <h4>Day-8: --GREEDY ALGORITHM</h4>
+<h4>Day-9: --RECURRSION</h4>
+<h4>Day-10: --RECURRSION AND BACKTRACKING</h4>
+
+
