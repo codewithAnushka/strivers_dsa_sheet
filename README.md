@@ -2,15 +2,15 @@
 # Striverssdesheetchallenge
 From today I will be taking Striver's 30-Day DSA challenge. I promise to be consistent and will commit the changes to Git Hub every day.
 
-<h4>Day-1: --ARRAYS</h4>
-<h4>Day-2: --ARRAYS PART- II</h4>
-<h4>Day-3: --ARRAYS PART- III</h4>
-<h4>Day-4: --ARRAYS PART- IV</h4>
-<h4>Day-5: --LINKEDLIST PART- I</h4>
-<h4>Day-6: --LINKEDLIST PART- II</h4>
-<h4>Day-7: --LINKEDLIST AND ARRAYS</h4>
-<h4>Day-8: --GREEDY ALGORITHM</h4>
-<h4>Day-9: --RECURRSION</h4>
-<h4>Day-10: --RECURRSION AND BACKTRACKING</h4>
-
+<h4>Day-1: -- ARRAYS</h4>
+<h4>Day-2: -- ARRAYS PART- II</h4>
+<h4>Day-3: -- ARRAYS PART- III</h4>
+<h4>Day-4: -- ARRAYS PART- IV</h4>
+<h4>Day-5: -- LINKEDLIST PART- I</h4>
+<h4>Day-6: -- LINKEDLIST PART- II</h4>
+<h4>Day-7: -- LINKEDLIST AND ARRAYS</h4>
+<h4>Day-8: -- GREEDY ALGORITHM</h4>
+<h4>Day-9: -- RECURRSION</h4>
+<h4>Day-10: -- RECURRSION AND BACKTRACKING</h4>
+<h4>Day-10: -- BINARY SEARCH</h4>
 
