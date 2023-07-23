@@ -1,0 +1,49 @@
+bool Symmetric(BinaryTreeNode<int>*lft,BinaryTreeNode<int>*rgt){
+
+    if(lft==NULL && rgt==NULL){
+
+        return true;
+
+    }
+
+    if (lft == NULL || rgt == NULL) {
+
+      return false;
+
+    }
+
+    bool left = Symmetric(lft->left, rgt->right);
+
+    bool right = Symmetric(lft->right, rgt->left);
+
+ 
+
+    
+
+    if (left!=NULL && right!=NULL && lft->data==rgt->data) {
+
+      return true;
+
+    } else
+
+      return false;
+
+    
+
+}
+
+ 
+
+bool isSymmetric(BinaryTreeNode<int>* root) {
+
+    //Write your code here
+
+    if(root==NULL){
+
+        return true;
+
+    }
+
+    return Symmetric(root->left, root->right);
+
+}
