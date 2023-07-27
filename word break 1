@@ -1,0 +1,75 @@
+/*
+    Time Complexity: O( N*(2^N) )
+    Space Complexity: O( N*(2^N) )
+    Where N is the length of sentence.
+*/
+
+vector<string> getAllValidSentencesHelper(string &sentence, int idx, unordered_set<string> &dictionary, unordered_map<int, vector<string>> &dp, int size)
+{
+    // base case
+    if (idx == size)
+    {
+        return {""};
+    }
+
+    //  Already has a solution for the current sentence, then simply return the solution.
+    if (dp.find(idx) != dp.end())
+    {
+        return dp[idx];
+    }
+
+    vector<string> subPart, completePart;
+    string word = "";
+
+    /*
+        Start exploring the sentence from the index until we wouldn't find 'j' such that substring [index,j] exists in the dictionary as a word.
+    */
+    for (int j = idx; j < size; j++)
+    {
+
+        word.push_back(sentence[j]);
+        if (dictionary.count(word) == 0)
+        {
+            continue;
+        }
+
+        //  Get the answer for rest of sentence from 'j' to sentence.size().
+        subPart = getAllValidSentencesHelper(sentence, j + 1, dictionary, dp, size);
+
+        //  Append "word" with all the answer what we got.
+        for (int i = 0; i < subPart.size(); i++)
+        {
+            if (subPart[i].size() != 0)
+            {
+                subPart[i] = word + " " + subPart[i];
+            }
+            else
+            {
+                subPart[i] = word + "" + subPart[i];
+            }
+        }
+
+        //  finally store the all.
+        for (auto sub : subPart)
+        {
+            completePart.push_back(sub);
+        }
+    }
+
+    //  Store all the answer what we got from the current index.
+    return dp[idx] = completePart;
+}
+vector<string> getAllValidSentences(string &s, vector<string> &dict)
+{
+    // dp[idx] will store the all possible sentence which has been formed for the current idx to end of the given sentence.
+    unordered_map<int, vector<string>> dp;
+
+    //  For optimisation to check the weather, any word exists in the dictionary or not.
+    unordered_set<string> d;
+
+    for (auto word : dict)
+    {
+        d.insert(word);
+    }
+    return getAllValidSentencesHelper(s, 0, d, dp, s.size());
+}
