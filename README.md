@@ -26,3 +26,10 @@ From today I will be taking Striver's 30-Day DSA challenge. I promise to be cons
 <h4>Day-22: -- BINARY TREE (MISCELLANEOUS)</h4>
 <h4>Day-23: -- GRAPHSh4>
 <h4>Day-24: -- GRAPHS PART- II</h4>
+<h4>Day-17: -- DP</h4>
+<h4>Day-17: -- DP PART- II</h4>
+<h4>Day-17: -- TRIE</h4>
+<h4>Day-17: -- OS</h4>
+<h4>Day-17: -- DBMS</h4>
+<h4>Day-17: -- CN</h4>
+<h4>Day-17: -- PROJECT</h4>
